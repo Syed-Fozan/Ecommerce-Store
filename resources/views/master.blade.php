@@ -18,5 +18,36 @@
         height: 500px;;
         padding-top: 100px;
     }
+    .custom-product{
+        height: 800px;
+        padding-top: 100px;
+    }
+    .header-height{
+        height: 50px;
+    }
+    img.slider-img{
+        height:300px !important;
+        width: 1000px !important;
+        margin: 0%;
+        padding: 0%;
+    }
+    .carousel-caption{
+        color:black;
+    }
+     .trending-image{ 
+         height:100px ; 
+         width: 200px ; 
+         
+     } 
+     .trending-side{
+        float: left;
+     }
+     h1{
+        height: 100px;
+        text-align: center;
+     }
+     .details-img{
+        height:200px;
+     }
 </style>
 </html>
