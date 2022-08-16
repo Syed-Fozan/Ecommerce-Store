@@ -19,17 +19,17 @@
         padding-top: 100px;
     }
     .custom-product{
-        height: 800px;
-        padding-top: 100px;
+        height: 1000px;
+        padding-top: 0%;
     }
     .header-height{
         height: 50px;
     }
     img.slider-img{
-        height:300px !important;
-        width: 1000px !important;
+        height:600px !important;
+        width: 100% !important;
         margin: 0%;
-        padding: 0%;
+        padding: 02%;
     }
     .carousel-caption{
         color:black;
@@ -48,6 +48,14 @@
      }
      .details-img{
         height:200px;
+        width:400px;
+      
+     }
+     .container{
+        margin-top: 4%;
+     }
+     .search-box{
+        width: 400px !important;
      }
 </style>
 </html>

@@ -13,23 +13,23 @@ class trendingseeder extends Seeder
     public function run()
     {
         DB ::table('trendings')->insert([[
-            'name'=>"iphone",
-            'img'=>"https://www.pngmart.com/image/328411"
+            'name'=>"Gaming Console",
+            'img'=>"images/game console/02/01.jpg"
 
         ],
         [
-            'name'=>"Washing Machine",
-            'img'=>"https://regalelectronics.pk/wp-content/uploads/WhatsApp-Image-2021-09-09-at-18.40.14.jpeg"
+            'name'=>"Laptop",
+            'img'=>"images/laptop/01/02.jpg"
 
         ],
         [
-            'name'=>"Ipad",
-            'img'=>"https://www.techadvisor.com/wp-content/uploads/2022/06/apple_ipad_mini_2021_review_12.jpg?resize=1024%2C576&quality=50&strip=all"
+            'name'=>"Smart Watch",
+            'img'=>"images/smart watch/02/02.jpg"
 
         ],
         [
-            'name'=>"Air conditioner",
-            'img'=>"https://klivago.de/katalog/lg/2bd.png"
+            'name'=>"Headphones",
+            'img'=>"images/headphones/02/02.jpg"
 
         ],
 

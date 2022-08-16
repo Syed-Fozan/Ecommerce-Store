@@ -21,3 +21,7 @@ Route::post('/login','UserController@login');
 //Route::get('/','ProductController@index');
 Route::get('/','ProductController@trendingitem');
 Route::get('details/{id}','ProductController@details');
+Route::get('search','ProductController@search');
+Route::post('add_to_cart','ProductController@addtoCart');
+
+

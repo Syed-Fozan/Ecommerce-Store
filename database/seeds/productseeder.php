@@ -18,27 +18,27 @@ class productseeder extends Seeder
             'category'=>"Mobile",
             'price'=>"100000",
             'description'=>"Iphone 11 pro Max",
-            'gallery'=>"file://C:/Users/Fame/Desktop/salesforce_partner.png"
+            'gallery'=>'images/banner/01.jpg'
             ],
          [ 'name'=>"LG TV ",
             'category'=>"TV",
             'price'=>"60000",
             'description'=>"Ld Led Tv",
-            'gallery'=>"file:///C:/Users/Fame/Desktop/salesforce_partner.png"
+            'gallery'=>'images/banner/02.jpg'
         ],
         [
             'name'=>"Haier Washing Machine ",
             'category'=>"Was",
             'price'=>"70000",
             'description'=>"abcdsfdfd",
-            'gallery'=>"file:///C:/Users/Fame/Desktop/salesforce_partner.png"
+            'gallery'=>'images/banner/03.jpg'
         ],
         [
             'name'=>"Gree Air Conditioner ",
             'category'=>"AC",
             'price'=>"70000",
             'description'=>"Gree Air Conditioner",
-            'gallery'=>"file:///C:/Users/Fame/Desktop/Ai-banner-image.png"
+            'gallery'=>'images/banner/04.jpg'
         ]
     ]);
     }

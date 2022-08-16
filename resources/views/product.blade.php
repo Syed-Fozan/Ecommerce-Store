@@ -16,8 +16,6 @@
         <a href="details/{{$item['id']}}">
         <img class="slider-img" src={{$item['gallery']}} alt={{$item['name']}}>
         <div class="carousel-caption">
-        <h3>{{$item['name']}}</h3>
-        <p>{{$item['description']}}</p>
         </div>
         </a>
       </div>
