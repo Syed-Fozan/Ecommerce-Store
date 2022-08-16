@@ -55,7 +55,12 @@
         margin-top: 4%;
      }
      .search-box{
-        width: 400px !important;
+        width: 200px !important;
+
+     }
+     .nav-link
+     {
+        color:white !important;
      }
 </style>
 </html>

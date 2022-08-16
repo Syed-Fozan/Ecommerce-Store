@@ -1,6 +1,13 @@
 <?php
 use App\Http\Controllers\ProductController;
+$total=0;
+if (Session::has('user'))
+{
 $total=ProductController::cartItem();
+}
+else{
+  return redirect('login');
+}
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark header-height">
     <a class="navbar-brand" href="#">Ecommerce Store</a>
@@ -20,13 +27,28 @@ $total=ProductController::cartItem();
           <a class="nav-link" href="#">Products</a>
         </li>
       </ul>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Cart({{$total}})</a>
-      </li>
+      
     </ul>
-      <form action="/search" class="form-inline my-2 my-lg-0 ">
+    
+      <form action="/search" class="form-inline my-2 my-lg-0 active d-flex align-items-left">
         <input class="form-control mr-sm-2 search-box" name="query" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
+    <li class="nav-item active d-flex align-items-center">
+      <a class="nav-link">Cart({{$total}})</a>
+    </li>
+    @if(Session::has('user'))
+    <li class="nav-item dropdown d-flex align-items-center">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       {{Session('user')['name']}}
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="logout">Logout</a>
+      </div>
+    </li>
+    @else
+    <a class="nav-link" href="login">Login</a>
+    @endif
+    
   </nav>
