@@ -1,3 +1,7 @@
+<?php
+use App\Http\Controllers\ProductController;
+$total=ProductController::cartItem();
+?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark header-height">
     <a class="navbar-brand" href="#">Ecommerce Store</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +21,7 @@
         </li>
       </ul>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Cart(0)</a>
+        <a class="nav-link" href="#">Cart({{$total}})</a>
       </li>
     </ul>
       <form action="/search" class="form-inline my-2 my-lg-0 ">

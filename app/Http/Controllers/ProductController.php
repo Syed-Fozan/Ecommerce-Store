@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Product;
 use App\Trending;
 use App\Cart;
+use Session;
 
 
 class ProductController extends Controller
@@ -48,5 +49,10 @@ public function addtoCart(Request $req)
    {
       return redirect('/login');
    }
+}
+static function cartItem()
+{
+$userId=Session::get('user')['id'];
+return Cart::where('user_id',$userId)->count();
 }
 }
