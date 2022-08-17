@@ -28,5 +28,6 @@ Route::get('details/{id}','ProductController@details');
 Route::get('search','ProductController@search');
 Route::post('add_to_cart','ProductController@addtoCart');
 Route::get('cartlist','ProductController@cartlist');
+Route::get('removecart/{id}','ProductController@removeCart');
 
 
