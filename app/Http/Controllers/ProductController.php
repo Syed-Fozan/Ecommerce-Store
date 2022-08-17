@@ -7,6 +7,7 @@ use App\Product;
 use App\Trending;
 use App\Cart;
 use Session;
+use Illuminate\Support\Facades\DB;
 
 
 class ProductController extends Controller
@@ -54,5 +55,15 @@ static function cartItem()
 {
 $userId=Session::get('user')['id'];
 return Cart::where('user_id',$userId)->count();
+}
+public function cartlist()
+{
+   $userId=Session::get('user')['id'];
+   $data=DB::table('cart')
+   ->join('products','cart.product_id','products.id')
+   ->select('products.*')
+   ->where('cart.user_id' , $userId)
+   ->get();
+   return  view('cartlist',['products'=>$data]);
 }
 }

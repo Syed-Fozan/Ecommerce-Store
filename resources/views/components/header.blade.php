@@ -36,7 +36,7 @@ else{
       </form>
     </div>
     <li class="nav-item active d-flex align-items-center">
-      <a class="nav-link">Cart({{$total}})</a>
+      <a class="nav-link" href="cartlist">Cart({{$total}})</a>
     </li>
     @if(Session::has('user'))
     <li class="nav-item dropdown d-flex align-items-center">
