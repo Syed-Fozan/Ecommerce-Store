@@ -22,6 +22,9 @@ Route::get('/logout', function () {
     return redirect('login');
 });
 Route::post('/login','UserController@login');
+Route::view('/register','Register');
+Route::post('/register','UserController@Register');
+
 //Route::get('/','ProductController@index');
 Route::get('/','ProductController@trendingitem');
 Route::get('details/{id}','ProductController@details');
@@ -31,6 +34,7 @@ Route::get('cartlist','ProductController@cartlist');
 Route::get('removecart/{id}','ProductController@removeCart');
 Route::get('ordernow','ProductController@orderNow');
 Route::post('orderplace','ProductController@orderPlace');
+Route::get('myorder','ProductController@myOrder');
 
 
 

@@ -5,9 +5,7 @@ if (Session::has('user'))
 {
 $total=ProductController::cartItem();
 }
-else{
-  return redirect('login');
-}
+
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark header-height">
     <a class="navbar-brand" href="/">Ecommerce Store</a>
@@ -18,14 +16,11 @@ else{
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="">Home</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Order</a>
+          <a class="nav-link" href="myorder">Order</a>
         </li> 
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Products</a>
-        </li>
       </ul>
       
     </ul>
@@ -48,6 +43,9 @@ else{
       </div>
     </li>
     @else
+    <li class="nav-item active d-flex align-items-center">
+      <a class="nav-link" href="register">Register</a>
+    </li>
     <a class="nav-link" href="login">Login</a>
     @endif
     

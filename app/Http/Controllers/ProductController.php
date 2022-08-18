@@ -105,4 +105,13 @@ public function orderPlace(Request $req)
    Cart::where('user_id',$userId)->delete();
    return redirect('');
 }
+public function myOrder()
+{
+   $userId=Session::get('user')['id'];
+    $orders=DB::table('order')
+   ->join('products','order.product_id','products.id')
+    ->where('order.user_id' , $userId)
+     ->get();
+      return view('myorder',['order'=>$orders]);
+}
 }
