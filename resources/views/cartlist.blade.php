@@ -4,6 +4,7 @@
     <div class='col-sm-10'>
     <div class='trending-wrapper'>
     <h2>Cart Item<h2>
+    <a  href="ordernow" class="btn btn-success">Order Now</a><br><br>
     <div class="">
     @foreach ($products as $item) 
     <div class='row-searched-item'>
@@ -29,4 +30,5 @@
 </div>
 </div>
     </div>
+    <a href="ordernow" class="btn btn-success">Order Now</a><br><br>
 @endsection

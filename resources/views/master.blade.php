@@ -11,6 +11,7 @@
     {{View::make('components.header')}}
     @yield('content')
     {{View::make('components.footer')}}
+    <
 
 </body>
 <style>
