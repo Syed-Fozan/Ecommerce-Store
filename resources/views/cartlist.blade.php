@@ -10,7 +10,7 @@
     <div class='row-searched-item'>
     <div class='col-sm-3'>    
     <a href="cartlist/{{$item->id}}">
-    <img  class='trending-image' src="{{$item->gallery}}" alt={{$item->name}}>
+    <img  class='trending-image' src="{{asset($item->gallery)}}" alt={{$item->name}}>
    </a>
     </div>
     <div class='col-sm-3'>

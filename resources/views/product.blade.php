@@ -22,15 +22,16 @@
       @endforeach
       
    
-    </div class='trending-wrapper'>
+    </div class='trending-wrapper '>
     <h1>Trendings<h1>
     @foreach ($trendings as $item)
-    <div class='trending-side'>
+    <div class='trending-side col-sm-4'>
     <a href="details/{{$item['id']}}">
     <img  class='trending-image' src="{{$item['img']}}" alt={{$item['name']}}>
         <h3>{{$item['name']}}</h3>   
     </a> 
     </div>  
+
     @endforeach
   </div>
     <!-- Left and right controls -->
