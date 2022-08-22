@@ -19,6 +19,9 @@ $total=ProductController::cartItem();
           <a class="nav-link" href="">Home</a>
         </li>
         <li class="nav-item active">
+          <a class="nav-link" href="contact">Contact Us</a>
+        </li>
+        <li class="nav-item active">
           <a class="nav-link" href="myorder">Order</a>
         </li> 
       </ul>

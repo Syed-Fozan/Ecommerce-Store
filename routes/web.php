@@ -13,6 +13,7 @@
 
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\StripeController; 
 
 Route::get('/login', function () {
     return view('login');
@@ -35,6 +36,12 @@ Route::get('removecart/{id}','ProductController@removeCart');
 Route::get('ordernow','ProductController@orderNow');
 Route::post('orderplace','ProductController@orderPlace');
 Route::get('myorder','ProductController@myOrder');
+route::get('stripe','StripeController@stripe');
+route::post('stripe','StripeController@stripePost');
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 
 
 

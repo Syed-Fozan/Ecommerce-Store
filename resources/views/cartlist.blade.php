@@ -13,13 +13,13 @@
     <img  class='trending-image' src="{{asset($item->gallery)}}" alt={{$item->name}}>
    </a>
     </div>
-    <div class='col-sm-3'>
+    <div class='col-sm-4'>
     <div class="">
     <h2>{{$item->name}}</h2> 
     <h5>{{$item->description}}</h5>    
     </div>  
     </div>  
-    <div class='col-sm-3'>
+    <div class='col-sm-4'>
         <div class="">
        <a href="removecart/{{$item->cart_id}}" class="btn btn-success">Remove Item</a>  
         </div>  

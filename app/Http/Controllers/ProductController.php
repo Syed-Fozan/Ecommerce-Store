@@ -84,7 +84,7 @@ public function orderNow ()
    ->join('products','cart.product_id','products.id')
     ->where('cart.user_id' , $userId)
      ->sum('products.price');
-      return view('ordernow',['total'=>$total]);
+      return view('ordernow', compact('total'));
 }
 public function orderPlace(Request $req)
 {

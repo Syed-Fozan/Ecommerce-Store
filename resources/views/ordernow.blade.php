@@ -40,7 +40,7 @@
                     <label for="javascript">JazzCash</label>
                 </div>
             </div>
-                <button type="submit" class="btn btn-primary">OrderNow</button>
+                <a  href="stripe" type="submit" class="btn btn-primary">OrderNow</a>
             </form>
 
         </div>
